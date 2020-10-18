@@ -1,0 +1,51 @@
+.orderData {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+}
+
+.orderData span {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+.orderData .shippingData, .orderData .billingData {
+	padding: 10px;
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.orderData .itemsData {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.orderData .shippingData table, .orderData .billingData table {
+	margin-top: 5px;
+	width:  80%;
+}
+
+.orderData .shippingData table tr td:first-child, .orderData .billingData table tr td:first-child {
+	font-weight: bold;
+}
+
+.orderData .shippingData table tr td, 
+.orderData .billingData table tr td,
+.orderData .itemsData table tr td {
+	border-bottom: gray solid 1px;
+}
+
+.orderData .itemsData table {
+	width: 80%;
+	text-align: center;
+}
+.orderData .itemsData table .total {
+	text-align: right;
+	font-weight: bold;
+}

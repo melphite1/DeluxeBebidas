@@ -1,0 +1,97 @@
+.checkout {
+    padding: 3vh;
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+    background: #1f2327;
+	display: flex;
+	min-height: 75vh;
+}
+
+.checkout .breadcrum {
+	width: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.checkout .breadcrum img:first-child {
+	width: 8%;
+}
+.checkout .breadcrum img {
+	width: 23%;
+}
+
+.checkout .title {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.checkout .addressForm {
+	width: 80vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.checkout .addressForm .buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.checkout .addressForm .buttons button {
+	width: 30%;
+}
+
+.checkout .addressForm .input {
+	display: flex;
+	color: white;
+	flex-direction: column;
+}
+
+.checkout .addressForm .input input, .checkout .addressForm .input select {
+	background: none;
+	border: 1px solid goldenrod;
+	padding: 7px;
+	margin-bottom: 10px;
+}
+
+.checkout .addressForm .input select {
+	color: white;
+}
+
+.checkout .addressForm .input label {
+	color: white;
+}
+
+input{
+	color: white;
+}
+@media only screen and (max-width: 550px){
+	.checkout .breadcrum {
+		width: 70vh;
+	}
+	.checkout .addressForm {
+		width: 70vh;
+	}
+}
+@media only screen and (max-width: 450px){
+	.checkout .breadcrum {
+		width: 60vh;
+	}
+	.checkout .addressForm {
+		width: 60vh;
+	}
+}
+@media only screen and (max-width: 400px){
+	.checkout .breadcrum {
+		width: 55vh;
+	}
+	.checkout .addressForm {
+		width: 53vh;
+	}
+}

@@ -1,0 +1,24 @@
+# BACKEND
+backend/client/build
+backend/node_modules
+backend/.env
+
+#FRONTEND
+frontend/node_modules
+frontend/src/images/.DS_Store
+frontend/src/images/Thumbs.db
+
+# MOBILE
+mobile/node_modules/**/*
+mobile/.expo/*
+mobile/npm-debug.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+mobile/*.orig.*
+mobile/web-build/
+
+# macOS
+mobile/.DS_Store

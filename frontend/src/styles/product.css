@@ -1,0 +1,121 @@
+.productCard {
+	height: 400px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 2vw;
+	border: 1px solid black;
+	background: black;
+	margin-top: 3vh;
+}
+
+.productCard .picture {
+	height: 60%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow-x: hidden;
+	border-bottom: white 1px solid;
+}
+
+.productCard .picture img {
+	height: 90%;
+}
+
+.productCard .picture .info {
+	background: none;
+	color: goldenrod;
+	font-size: 30px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.productCard .picture:hover .info {
+	background: rgba(61, 61, 61, 0.8);
+	border-radius: 100%;
+	display: flex;
+	animation: lupa 1.5s infinite;
+}
+
+.productCard .picture .like {
+	background: black;
+	color: goldenrod;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	right: -50px;
+	transition: right .2s linear;
+	cursor: pointer;
+}
+
+.productCard .picture:hover .like {
+	right: 0px;
+}
+
+.productCard .text {
+	flex: 1;
+	color: gray;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.productCard .text .data {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	width: 100%;
+}
+
+.productCard .text .rating {
+	color: goldenrod;
+	font-size: 15px;
+}
+
+.productCard .text .data .title {
+	font-size: 20px;
+}
+
+.productCard .text .data .price {
+	font-size: 18px;
+}
+
+.productCard .text .addToCartBtn {
+	width: 80%;
+	padding: 8px;
+	background: #d1b653;
+	border: none;
+	align-self: center;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	bottom: 15px;
+}
+
+@keyframes lupa {
+	0% {font-size: 40px;}
+	50% {font-size: 60px;}
+	100% {font-size: 40px;}
+}

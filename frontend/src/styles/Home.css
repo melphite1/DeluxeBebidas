@@ -1,0 +1,212 @@
+.banner{
+    height:85vh;
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.homeBackgroundOne{
+    position: absolute;
+    top:40vh;
+    left: 0;
+    z-index: 1;
+    width: 310px;
+}
+.homeBackgroundTwo{
+    position: absolute;
+    top:80vh;
+    right: 0;
+    z-index: 1;
+    width: 300px;
+}
+.whoWeAre{
+    background-color: #000000;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whoWeAre h2{
+    width: 45%;
+    text-align: center;
+    font-size: 4vw;
+    color: #ffffff;
+    padding-top: 20vh;
+    margin-right: 3vw;
+}
+.whoWeAre p{
+    margin-top: 3vh;
+    width: 35%;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 3vw;
+}
+.whoWeAre h5{
+    margin-right: 3vw;
+    margin-top: 3vh;
+    width: 38%;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #ffffff;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    padding: 35vh 0vw;
+    background-color: #000000;
+}
+.categories  h2{
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+.categories .allCategories{
+    padding: 10vh 0vw 2vh 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+.categories .allCategories .TheCategorie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3vh 1vw;
+    width: 24vw;
+    height: 45vh;
+    padding: 2.5vw;
+    background-color: #ffffff1c;
+}
+.categories .allCategories .TheCategorie p{
+    margin-top: 2vh;
+    color: #ffffff;
+    
+}
+
+.categories .allCategories .TheCategorie:hover{
+    box-shadow: 0vw 0vw 1.5vw 0vw #7e7d7db9;
+    font-weight: bold;
+}
+@media only screen and (max-width: 900px){
+    .homeBackgroundOne{
+        top:40vh;
+        width: 280px;
+    }
+    .homeBackgroundTwo{
+        top:80vh;
+        width: 250px;
+    }
+    .categories{
+        padding:30vh 0vw;
+    }
+    .categories .allCategories .TheCategorie{
+        width: 34vw;
+    }
+
+}
+@media only screen and (max-width: 750px){
+    .homeBackgroundOne{
+        top:40vh;
+        width: 250px;
+    }
+    .homeBackgroundTwo{
+        top:80vh;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .homeBackgroundOne{
+        top:20vh;
+        width: 130px;
+    }
+    .homeBackgroundTwo{
+
+        top:50vh;
+        width: 130px;
+    }
+    .categories .allCategories .TheCategorie{
+        width: 40vw;
+        padding:8vw;
+    }
+    
+    .whoWeAre h2{
+        width: 60%;
+        font-size: 5vw;
+        padding-top: 10vh;
+        margin-right: 3vw;
+
+    }
+    .whoWeAre p{
+        width: 50%;
+        font-size: 2vw;
+        margin-right: 3vw;
+    
+    }
+    .whoWeAre h5{
+        margin-right: 3vw;
+        width: 55%;
+        font-size: 2vw;
+       
+    }
+    .categories{
+        padding: 5vh 0vw;
+        background-color: #000000;
+    }
+    .categories  h2{
+        font-size: 5vw;
+        margin-right: 3vw;
+    }
+    .categories .allCategories{
+        padding: 5vh 3vw 2vh 0vw;
+    }
+    
+    .categories .allCategories .TheCategorie{
+        width: 50vw;
+    }
+    .banner{
+       height: 28vh;
+    }
+}
+@media only screen and (max-width: 400px){
+   
+    .categories .allCategories .TheCategorie{
+        width: 65vw;
+        padding: 7vh 3vw;
+    }
+    .whoWeAre h2{
+        font-size: 5.5vw;
+
+    }
+    .whoWeAre p{
+        font-size: 2.5vw;
+    
+    }
+    .whoWeAre h5{
+        margin-right: 3vw;
+        width: 50%;
+        font-size: 2.5vw;
+       
+    }
+    .homeBackgroundOne{
+        top:20vh;
+        width: 120px;
+    }
+    .homeBackgroundTwo{
+
+        top:53vh;
+        width: 120px;
+    }
+    
+}

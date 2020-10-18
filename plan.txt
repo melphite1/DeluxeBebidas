@@ -1,0 +1,101 @@
+App bebidas
+
+backend/
+├── config/
+│   ├── db.js
+│   ├── passport.js
+│   └── validador.js -> {userValidador: method, 
+│                        productValidador: method} // Validacion backend
+├── controllers/
+│   ├── productController.js {createProduct: method, 
+│   │                        modifyProduct: method, 
+│   │                        deleteProduct: method,
+│   │                        getProductByCat: method}
+│   │                        getProductById: method}
+│   │                        getProductByWishlist: method}
+│   ├── orderController.js -> {createOrder: method, 
+│   │                          modifyOrder: method, 
+│   │                          deleteOrder: method, 
+│   │                          getUserOrder: method, 
+│   │                          getOrderById: method, 
+│   │                          getAllOrders: method}
+│   ├── commentController.js -> {createComment: method, 
+│   │                            modifyComment: method, 
+│   │                            deleteComment: method,
+│   │                            getProductComments: method}
+│   └── userController.js -> {createUser: method, 
+│                             loginUser: method, 
+│                             addToWishlist: method
+│                             removeToWishlist: method
+│                             decodeUser: method}
+├── models/
+│   ├── User.js
+│   ├── Product.js
+│   ├── Order.js
+│   └── Comment.js
+├── node_modules/
+├── routes/
+│   └── index.js
+├── .env
+├── package-lock.json
+├── package.json
+└── server.js
+
+frontend/
+├── node_modules/
+├── public/
+│   ├── favicon.ico (o .png)
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   ├── Order.js
+│   │   ├── Product.js
+│   │   └── Comment.js
+│   ├── components/
+│   │   └── index.js
+│   ├── images/
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Account.js
+│   │   ├── AdminDashboard.js
+│   │   ├── CreateProduct.js
+│   │   ├── EditProduct.js
+│   │   ├── Orders.js
+│   │   ├── Login.js
+│   │   ├── SignUp.js
+│   │   ├── ProductFull.js
+│   │   └── Products.js
+│   ├── redux/
+│   │   ├── actions/
+│   │   │   ├── productActions.js
+│   │   │   └── orderActions.js
+│   │   │   └── userActions.js
+│   │   └── reducers/
+│   │       ├── rootReducer.js
+│   │       ├── productReducer.js
+│   │       ├── orderReducer.js
+│   │       └── userReducer.js
+│   ├── styles/
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   ├── serviceWorker.js
+│   └── setupTests.js
+├── package-lock.json
+└── package.json
+
+mobile
+├── .expo/
+├── .expo-shared/
+├── assets/
+│	└── ...
+├── node_modules/
+├── App.js
+├── app.json
+├── babel.config.js
+├── package-lock.json
+└── package.json
+

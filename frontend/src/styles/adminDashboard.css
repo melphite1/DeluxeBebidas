@@ -1,0 +1,214 @@
+/* DASHBOARD */
+.dashboard {
+	background: #1f2327;
+	display: flex;
+	height: 90vh;
+}
+
+/* ADMIN HEADER */
+.adminHeader {
+	width: 100%;
+	height: 10vh;
+	background: #16191c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.adminHeader .logo {
+	height: 100%;
+	padding: 10px;
+}
+
+.adminHeader .logo img {
+	height: 100%;
+}
+
+.adminHeader span {
+	color: white;
+	margin-right: 20px;
+}
+
+/* NAV ADMIN */
+.navAdmin {
+	display: flex;
+	width: 15%;
+	min-width: 250px;
+	height: 100%;
+	flex-direction: column;
+	color: gray;
+	background: #16191c;
+}
+
+.navAdmin a {
+	text-decoration: none;
+	color: inherit;
+}
+.navAdmin a:visited {
+	color: gray;
+}
+
+.navAdmin a.active .navItem div:first-child {
+	background: goldenrod;
+	color: white;
+}
+
+/* Sweep */
+
+.str {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+  }
+  .str:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: goldenrod;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  }
+  .str:hover, .str:focus, .str:active {
+	color: white;
+  }
+  .str:hover:before, .str:focus:before, .str:active:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+  }
+  
+
+/* End sweep */
+
+.navAdmin .navItem {
+	width: 100%;
+	display: flex;
+}
+
+.navAdmin .navItem div:first-child {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #3b444d;
+	border-right: 1px solid #3b444d;
+}
+.navAdmin .navItem div:last-child {
+	flex: 1;
+	padding-left: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1px solid #3b444d;
+	font-weight: bold;
+	font-size: small;
+}
+
+/* DATA PANEL */
+
+.dataPanel {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 30px 15px;
+	gap: 20px;
+	height: 80vh;
+}
+
+/* ADMIN DATA */
+
+.adminData {
+	width: 40%;
+	height: 30vh;
+	background: #292e33;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	border-radius: 5px;
+}
+
+.adminData span:first-child {
+	font-size: 500%;
+}
+
+.adminData:nth-child(1) span:last-child {
+	color: salmon
+}
+.adminData:nth-child(2) span:last-child {
+	color: cadetblue
+}
+.adminData:nth-child(3) span:last-child {
+	color: goldenrod
+}
+.adminData:nth-child(4) span:last-child {
+	color: lightgreen
+}
+
+/* FROMS */
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+form.form {
+	background: #292e33;
+	width: 100%;
+	padding: 10px;
+}
+form.form h2 {
+	color: white;
+	margin-bottom: 20px;
+}
+
+form.form .inputBox {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+form.form label {
+	color: #98a4b9;
+	margin-bottom: 5px;
+}
+
+form.form input, form.form select {
+	background-color: #3b4654;
+	border-radius: 2px;
+	border: 1px solid #4a5869;
+	padding: 5px;
+	color: #ffffff;
+}
+
+form.form button {
+	width: 30%;
+	padding: 10px;
+	background: #0094e5;
+	border: none;
+	color: white;
+}

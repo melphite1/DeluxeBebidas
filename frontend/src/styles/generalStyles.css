@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.btnPrimary {
+	width: 80%;;
+	padding: 10px;
+	background: #d1b653;
+	border: none;
+	margin: 15px 0;
+}
+
+.btnSecondary {
+	width: 80%;
+	padding: 10px;
+	background: none;
+	color: #d1b653;
+	border: #d1b653 1px solid;	
+}
+.animationDiv{
+	background-color: #000000;
+	height: 400px;
+	width: 600px;
+	position: fixed;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+	justify-content: space-between;
+	color: #ffffff;
+	margin-top: -3vh;
+	align-items: center;
+}
+.animationDiv img{
+	width: 400px;
+	margin-left: -8vw;
+
+}
+.animationDiv h4{
+	text-align: center;
+	font-size: 2.5em;
+	width: 80%;
+	margin-top: 5vh;
+}
+.animationDiv p{
+	text-align: center;
+	margin-top: 5vh;
+	font-size: 1em;
+	font-style: italic;
+}
+.btnPrimaryy{
+	width: 20vw;
+	padding: 10px;
+	background: #d1b653;
+	border:  1px solid #d1b653 ;
+	margin: 15px 0;
+}
+.btnPrimaryyy{
+	width: 20vw;
+	padding: 10px;
+	background: none;
+	border: 1px solid #d1b653 ;
+	margin: 15px 0;
+	color: #ffffff;
+}
+.btnPrimaryyy:hover{
+	background: #d1b653;
+	color: #000000;
+}
+.btnPrimaryy:hover{
+	background: none;
+	color: #ffffff;
+}
+.textPrimaryy{
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: center; 
+	color:white;
+	margin: 30px;
+}
+.buttonsOrderDone{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90vw;
+	justify-content: center;
+}
+.loader{
+	width:90px;
+	margin-top: 20vh;
+}
+.TheBuy{
+	font-weight: bold;
+	font-size: 1em;
+	color: #d1b653;
+}
+
+.errorC {
+	color: red;
+	font-size: 12px;
+	align-self: center;
+}

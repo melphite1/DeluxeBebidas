@@ -1,0 +1,101 @@
+.products {
+	background: #1f2327;
+	display: flex;
+	min-height: 80vh;
+}
+
+.navProducts {
+	display: flex;
+	width: 15%;
+	min-width: 250px;
+	flex-direction: column;
+	justify-content: flex-start;	
+	color: gray;
+	background: #16191c;
+	transition: left .4s linear;
+}
+.noItemsDiv{
+	display: flex;
+	align-items: center;
+	margin-left: 25vw;
+	
+}
+.noItems{
+	margin-top: -20vh;
+	width: 250px;
+
+}
+.loadingss{
+ width: 10vw;
+ height: 10vw;
+ margin: 30vh 30vw;
+}
+
+.products .productList {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: center;
+}
+
+.products .navProductsToggler {
+	display: none;
+}
+
+.navProducts .categories {
+	padding: 0;
+}
+
+.navProducts .filters p{
+	margin: 10px 0 20px 0;
+	padding: 0 0 10px 0;
+	color: white;
+	font-weight: bold;
+	font-size: 19px;
+	border-bottom: 1px solid rgb(92, 91, 91);
+}
+.navProducts .filters button{
+    width: 100%;
+	padding: 8px;
+	background: none;
+	color: #ffffff;
+	border: #d1b653 1px solid;
+    cursor: pointer;	
+    text-align: start;
+}
+
+.navProducts .filters button:hover{
+	color: #ffffff;
+	background: #d1b653;
+}
+
+@media (max-width: 400px) {
+	.products {
+		flex-direction: column;
+		position: relative;
+		min-height: 120vh;
+	}
+	
+	.products .navProducts {
+		position: absolute;
+		width: 100%;
+		left: -400px;
+		z-index: 5;
+	}
+
+	.products .navProductsToggler {
+		display: flex;
+		padding: 15px;
+		background: #16191c;
+	}
+
+	.products .navProductsToggler button {
+		width: 100%;
+		padding: 8px;
+		background: none;
+		color: #ffffff;
+		border: #d1b653 1px solid;
+		cursor: pointer;
+		text-align: center;
+	}
+}

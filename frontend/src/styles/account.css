@@ -1,0 +1,198 @@
+.generaAccount{
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;  
+    background: #1f2327;
+    color: #ffffff;
+}
+
+
+.generaAccount .myInfo{
+    width: 30%;
+    height: 100%;
+    background-color: #16191c;
+    padding: 4vw;
+}
+/*.generaAccount .myInfo .yourProfilePhoto{
+    padding: 12vh 0vw;
+    text-align: center;
+    border: 2px solid #d1b653;
+    height: 17.5vw;
+    width:  17.5vw;
+}*/
+.generaAccount .myInfo .yourProfilePhoto input{
+    font-size: 1.1vw;
+    padding-left: 0.5vw;
+}
+
+.generaAccount .myInfo  .title{
+    width: 90%;
+	margin: 20px 0 20px 0;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+    border-bottom: 1px solid #a0a0a0;
+    
+}
+.generaAccount .myInfo .yourProfileInfo .theInfo{
+    padding: 4vh 0vw;
+
+}
+.generaAccount .myInfo .yourProfileInfo .theInfo input{
+    padding: 1vh 2vw;
+    background: none;
+	border: 1px solid goldenrod;
+	padding: 7px;
+    margin-bottom: 10px;
+    color:white
+}
+.generaAccount .myInfo .yourProfileInfo .theInfo button{
+    width: 20vw;
+    padding: 1vh;
+    font-size: 1.5vw;
+    background: #d1b653;
+    border: 2px solid #d1b653;
+    
+}
+.generaAccount .myInfo .yourProfileInfo .theInfo button:hover{
+    color: #ffffff;
+    background: #000000;
+    border: 2px solid #d1b653;
+}
+
+.generaAccount .myInfo .yourProfileInfo .theInfo button.cancelButton{
+    color: #ffffff;
+    background: #000000;
+    border: 2px solid #d1b653;
+}
+.generaAccount .myInfo .yourProfileInfo .theInfo button.cancelButton:hover{
+    background: #d1b653;
+    border: 2px solid #d1b653;
+    color: black;
+}
+.generaAccount .myInfo .yourProfileInfo .theInfo span{
+    font-weight: bold;
+    margin-right: 1vw;
+    
+    
+}
+.generaAccount .myBillingInfo{
+    width: 70%;
+    height: 100%;
+    padding: 4vw;
+    overflow-y: scroll;
+}
+.generaAccount .myBillingInfo .theInfo input{
+    padding: 0.5vh 2vw;
+    background: none;
+	border: 1px solid goldenrod;
+	padding: 7px;
+    margin-bottom: 10px;
+    color:white
+}
+.generaAccount .myBillingInfo .theInfo {
+    padding: 1vh 2vw;
+}
+.generaAccount .myBillingInfo .theInfo p {
+    display: flex;
+}
+.generaAccount .myBillingInfo .theInfo span {
+	min-width: 20ch;
+	font-weight: bold;
+}
+
+.generaAccount .myBillingInfo .title{
+    width: 90%;
+	margin: 20px 0 20px 0;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	border-bottom: 1px solid #a0a0a0;
+}
+.theWish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #16191c;
+    width: 55vw;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+}
+.theWish .infoWish{
+    display: flex;
+    align-items: center;
+}
+.theWish .wishBack{
+    height: 100px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.theWish .infoWish .wishTitle{
+    font-weight: bold;
+    padding-bottom: 1vh; 
+    font-size: 1em;
+}
+.theWish .fas{
+    cursor: pointer;
+    padding: 1vh 2vw;
+}
+.theWish .far{
+    cursor: pointer;
+    padding: 1vh 2vw;
+}
+.theWish .fas:hover{
+   color: #ffffff71;
+}
+
+@media only screen and (max-width: 750px){
+    .generaAccount{
+        flex-direction: column;
+        height: auto;
+    
+    }
+    .generaAccount .myInfo {
+        width: 100%;
+    }
+    .generaAccount .myInfo .yourProfileInfo .myPersonalInfo .theInfo{
+      margin-right: 9vw;
+      text-align: center;
+    
+    }
+    .generaAccount .myInfo .yourProfileInfo .myPersonalInfo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .generaAccount .myInfo .yourProfileInfo .buttonsInfo {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .generaAccount .myInfo .yourProfileInfo .buttonsInfo .theInfo button{
+        font-size: 2vw;
+        width: 30vw;
+    }
+    .generaAccount .myBillingInfo{
+        width: 100%;
+        padding: 4vw;
+    }
+    .theWish{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .generaAccount .myInfo .yourProfileInfo .buttonsInfo .theInfo button{
+        font-size: 3vw;
+        width: 35vw;
+    }
+    .generaAccount .myBillingInfo .title{
+        font-size: 20px;
+	}
+
+	.generaAccount .myBillingInfo .theInfo p {
+		flex-direction: column;
+	}
+	
+}

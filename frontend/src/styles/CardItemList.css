@@ -1,0 +1,42 @@
+.conteiner{
+    margin: 0 auto;
+    border: 1px solid;
+    height:20%;
+    width: 30%;
+    box-shadow: 1px 1px 15px;
+    border-radius: 15px;
+    background-color: rgb(75, 71, 71);
+    overflow:hidden;  
+    
+}
+  
+  .conteiner h1{
+    text-align: center;
+    color:white;
+    font-size: 3vh;
+  }
+  
+  /* .conteiner img{
+    width: 20%;
+    height: 100%;
+  } */
+   
+  
+    .botones{
+   height: 100%;
+   display:flex;
+   justify-content: flex-end;
+   padding-right:50px;
+   padding-bottom: 15px; 
+   align-items: center;
+   color:white;
+  } 
+  
+  .botones button{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 3vh;;
+  }
+
+  
+  

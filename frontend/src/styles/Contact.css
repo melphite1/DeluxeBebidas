@@ -1,0 +1,150 @@
+.contactanos{
+    background-color: #000000;
+}
+.contactanos .title{
+    text-align: center;
+    font-size: 5vw;
+    color: #ffffff;
+}
+.contactanos h5{
+    text-align: center;
+    color: #ffffff;
+    padding: 3vh 0vw 12vh 0vw;
+    font-size: 1.5vw;
+}
+
+
+.sign{
+ display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 10vh;
+ 
+}
+.sign .theForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to bottom, #7f673eab 0%, #d7b16c9c 100%) 1;
+    padding: 5vh 8vw;
+}
+
+.sign .theForm .inputBox input{ 
+    width: 25vw;
+    background-color: #000000;
+    border: none;
+    border-bottom: 3px solid transparent; 
+    border-image: linear-gradient(to bottom, #7f673ec7 0%, #d7b16cc4 100%) 1;
+    padding: 0.5vh 1vw;
+    margin: 1vw;
+    color: #ffffff;
+}
+.sign .theForm .inputBox textarea{ 
+    width: 25vw;
+    height: 20vh;
+    background-color: #000000;
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to bottom, #7f673ec7 0%, #d7b26cc4 100%) 1;
+    padding: 1vw;
+    margin: 1vw;
+   resize: none;
+   color: #ffffff;
+}
+.sign .theForm button{
+    background: #917e39;
+    color: #ffffff;
+    border: none;
+    padding: 2vh 4vw;
+    font-weight: bold;
+}
+.sign .theForm button:hover{
+    background: #c5ac4f;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+.sign .theInfo{
+    color: #ffffff;
+    margin-left: -3vw ;
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to bottom, #7f673ec7 0%, #d7b26cc4 100%) 1;
+}
+.sign .theInfo .nuestraInfo{
+    display: flex;
+    align-items: center;
+    padding: 5vh 5vw;
+    
+    
+}
+.sign .theInfo .nuestraInfo p{
+    width: 25vw;
+    padding-left: 1vw ;
+}
+@media only screen and (max-width: 850px){
+    .contactanos .title{
+        padding-top: 10vh;
+    }
+    .contactanos h5{
+        font-size: 2vw;
+        padding-bottom: 5vh;
+    }
+    .sign{
+       flex-direction: column;
+       padding-bottom: 10vh;
+    }
+    .sign .theForm{
+        padding: 4vh 10vw;
+        margin-bottom: 3vh;
+    }
+    .sign .theForm .inputBox input{ 
+        width: 50vw;
+        border-bottom: 2px solid transparent; 
+        border-image: linear-gradient(to bottom, #7f673ec7 0%, #d7b16cc4 100%) 1;
+    }
+    .sign .theForm .inputBox textarea{ 
+        width: 50vw;
+        height: 17vh;
+        border: 2px solid transparent; 
+        border-image: linear-gradient(to bottom, #7f673ec7 0%, #d7b26cc4 100%) 1;
+    }
+    .sign .theForm button{
+        padding: 1vh 4vw;
+    }
+    .sign .theInfo{
+        margin-left: 0vw ;
+        width: 85vw;
+    }
+    .sign .theInfo .nuestraInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2vh 5vw;
+        
+        
+    }
+    .sign .theInfo .nuestraInfo p{
+        text-align: center;
+        width: auto;
+        font-size: 2vw;
+        padding-left: 1vw ;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .sign .theInfo .nuestraInfo h3{
+        font-size: 2.5vw;
+    }
+
+}
+@media only screen and (max-width: 850px){
+    .sign .theInfo .nuestraInfo h3{
+        font-size: 3vw;
+    }
+    .sign .theInfo .nuestraInfo p{
+        font-size: 2.5vw;
+    }
+}
